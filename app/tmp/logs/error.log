@@ -1,0 +1,786 @@
+2014-10-04 08:29:36 Error: [MissingActionException] Action AppController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'index',
+)
+Request URL: /app/
+Stack Trace:
+#0 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(AppController), Object(CakeRequest), Object(CakeResponse))
+#2 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-04 08:35:54 Error: [MissingViewException] View file "/Demo/app/View/Inventory/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Demo/app/View/Inventory/test.ctp',
+)
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/View/View.php(457): View->_getViewFileName(NULL)
+#1 /Demo/lib/Cake/Controller/Controller.php(952): View->render(NULL, NULL)
+#2 /Demo/lib/Cake/Routing/Dispatcher.php(192): Controller->render()
+#3 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#4 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-04 08:36:32 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /inventory/test.json
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Demo/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Demo/lib/Cake/Model/Model.php(3471): ConnectionManager::getDataSource('default')
+#3 /Demo/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /Demo/lib/Cake/Model/Model.php(3493): Model->setSource('inventories')
+#5 /Demo/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#6 /Demo/lib/Cake/Model/Model.php(1445): Model->schema()
+#7 /Demo/lib/Cake/Model/Model.php(1432): Model->hasField('title', false)
+#8 /Demo/lib/Cake/Model/Model.php(880): Model->hasField(Array)
+#9 /Demo/lib/Cake/Controller/Scaffold.php(131): Model->__get('displayField')
+#10 /Demo/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(InventoryController), Object(CakeRequest))
+#11 /Demo/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#12 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#14 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-10-04 08:37:11 Error: Fatal Error (1): Call to a member function init() on a non-object in [/Demo/lib/Cake/Controller/Controller.php, line 643]
+2014-10-04 08:37:11 Error: [FatalErrorException] Call to a member function init() on a non-object
+Request URL: /inventory/test.json
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/lib/Cake/...', 643)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/lib/Cake/...', 643, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/lib/Cake/...', 643, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 08:37:24 Error: Fatal Error (1): Call to a member function init() on a non-object in [/Demo/lib/Cake/Controller/Controller.php, line 643]
+2014-10-04 08:37:24 Error: [FatalErrorException] Call to a member function init() on a non-object
+Request URL: /inventory/test.json
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/lib/Cake/...', 643)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/lib/Cake/...', 643, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/lib/Cake/...', 643, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 08:37:32 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /inventory/test.json
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Demo/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Demo/lib/Cake/Model/Model.php(3471): ConnectionManager::getDataSource('default')
+#3 /Demo/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /Demo/lib/Cake/Model/Model.php(3493): Model->setSource('inventories')
+#5 /Demo/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#6 /Demo/lib/Cake/Model/Model.php(1445): Model->schema()
+#7 /Demo/lib/Cake/Model/Model.php(1432): Model->hasField('title', false)
+#8 /Demo/lib/Cake/Model/Model.php(880): Model->hasField(Array)
+#9 /Demo/lib/Cake/Controller/Scaffold.php(131): Model->__get('displayField')
+#10 /Demo/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(InventoryController), Object(CakeRequest))
+#11 /Demo/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#12 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#14 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-10-04 08:37:41 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /inventory/test.json
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Demo/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Demo/lib/Cake/Model/Model.php(3471): ConnectionManager::getDataSource('default')
+#3 /Demo/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /Demo/lib/Cake/Model/Model.php(3493): Model->setSource('inventories')
+#5 /Demo/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#6 /Demo/lib/Cake/Model/Model.php(1445): Model->schema()
+#7 /Demo/lib/Cake/Model/Model.php(1432): Model->hasField('title', false)
+#8 /Demo/lib/Cake/Model/Model.php(880): Model->hasField(Array)
+#9 /Demo/lib/Cake/Controller/Scaffold.php(131): Model->__get('displayField')
+#10 /Demo/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(InventoryController), Object(CakeRequest))
+#11 /Demo/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#12 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#14 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-10-04 08:37:43 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /inventory/test.json
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Demo/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Demo/lib/Cake/Model/Model.php(3471): ConnectionManager::getDataSource('default')
+#3 /Demo/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /Demo/lib/Cake/Model/Model.php(3493): Model->setSource('inventories')
+#5 /Demo/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#6 /Demo/lib/Cake/Model/Model.php(1445): Model->schema()
+#7 /Demo/lib/Cake/Model/Model.php(1432): Model->hasField('title', false)
+#8 /Demo/lib/Cake/Model/Model.php(880): Model->hasField(Array)
+#9 /Demo/lib/Cake/Controller/Scaffold.php(131): Model->__get('displayField')
+#10 /Demo/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(InventoryController), Object(CakeRequest))
+#11 /Demo/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#12 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#14 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-10-04 08:37:58 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /inventory/test.json
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Demo/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Demo/lib/Cake/Model/Model.php(3471): ConnectionManager::getDataSource('default')
+#3 /Demo/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /Demo/lib/Cake/Model/Model.php(3493): Model->setSource('inventories')
+#5 /Demo/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#6 /Demo/lib/Cake/Model/Model.php(1445): Model->schema()
+#7 /Demo/lib/Cake/Model/Model.php(1432): Model->hasField('title', false)
+#8 /Demo/lib/Cake/Model/Model.php(880): Model->hasField(Array)
+#9 /Demo/lib/Cake/Controller/Scaffold.php(131): Model->__get('displayField')
+#10 /Demo/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(InventoryController), Object(CakeRequest))
+#11 /Demo/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#12 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#14 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-10-04 08:43:35 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /inventory/test.json
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Demo/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Demo/lib/Cake/Model/Model.php(3471): ConnectionManager::getDataSource('default')
+#3 /Demo/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /Demo/lib/Cake/Model/Model.php(3493): Model->setSource('inventoryEvent')
+#5 /Demo/lib/Cake/Model/Model.php(1353): Model->getDataSource()
+#6 /Demo/lib/Cake/Model/Model.php(1445): Model->schema()
+#7 /Demo/lib/Cake/Model/Model.php(1432): Model->hasField('title', false)
+#8 /Demo/lib/Cake/Model/Model.php(880): Model->hasField(Array)
+#9 /Demo/lib/Cake/Controller/Scaffold.php(131): Model->__get('displayField')
+#10 /Demo/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(InventoryController), Object(CakeRequest))
+#11 /Demo/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#12 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#13 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#14 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-10-04 08:43:38 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Demo/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Demo/lib/Cake/Model/Model.php(3471): ConnectionManager::getDataSource('default')
+#3 /Demo/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /Demo/lib/Cake/Model/Model.php(3493): Model->setSource('inventoryEvent')
+#5 /Demo/lib/Cake/Model/Model.php(3300): Model->getDataSource()
+#6 /Demo/app/Controller/InventoryController.php(18): Model->query('SELECT 1')
+#7 [internal function]: InventoryController->test()
+#8 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#9 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#11 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-04 08:45:21 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Demo/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Demo/lib/Cake/Model/Model.php(3471): ConnectionManager::getDataSource('default')
+#3 /Demo/lib/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /Demo/lib/Cake/Model/Model.php(3493): Model->setSource('inventoryEvent')
+#5 /Demo/lib/Cake/Model/Model.php(3300): Model->getDataSource()
+#6 /Demo/app/Controller/InventoryController.php(18): Model->query('SELECT 1')
+#7 [internal function]: InventoryController->test()
+#8 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#9 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#11 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-04 21:01:36 Error: [MissingComponentException] Component class CurlHelperComponentComponent could not be found.
+Exception Attributes: array (
+  'class' => 'CurlHelperComponentComponent',
+  'plugin' => false,
+)
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('CurlHelperCompo...', Array)
+#1 /Demo/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(InventoryController))
+#2 /Demo/lib/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#3 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#4 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-04 21:01:46 Error: Fatal Error (1): Class 'Component\Component' not found in [/Demo/app/Controller/Component/CurlHelperComponent.php, line 7]
+2014-10-04 21:01:46 Error: [FatalErrorException] Class 'Component\Component' not found
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Componen...', '/Demo/app/Contr...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Componen...', '/Demo/app/Contr...', 7, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Componen...', '/Demo/app/Contr...', 7, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 21:07:24 Error: Fatal Error (1): Call to undefined method CurlHelperComponent::executeJsonRequest() in [/Demo/app/Controller/InventoryController.php, line 22]
+2014-10-04 21:07:24 Error: [FatalErrorException] Call to undefined method CurlHelperComponent::executeJsonRequest()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/app/Contr...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/app/Contr...', 22, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/app/Contr...', 22, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 21:30:41 Error: Fatal Error (1): Class 'Security' not found in [/Demo/app/Controller/InventoryController.php, line 19]
+2014-10-04 21:30:41 Error: [FatalErrorException] Class 'Security' not found
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Security...', '/Demo/app/Contr...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Security...', '/Demo/app/Contr...', 19, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Security...', '/Demo/app/Contr...', 19, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 21:32:19 Error: Fatal Error (1): Call to undefined method SecurityComponent::encrypt() in [/Demo/app/Controller/InventoryController.php, line 19]
+2014-10-04 21:32:19 Error: [FatalErrorException] Call to undefined method SecurityComponent::encrypt()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/app/Contr...', 19)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/app/Contr...', 19, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/app/Contr...', 19, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 21:33:13 Error: Fatal Error (1): Call to undefined method Security::encrypt() in [/Demo/app/Controller/InventoryController.php, line 20]
+2014-10-04 21:33:13 Error: [FatalErrorException] Call to undefined method Security::encrypt()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/app/Contr...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/app/Contr...', 20, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/app/Contr...', 20, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 21:33:17 Error: Fatal Error (1): Call to undefined method Security::encrypt() in [/Demo/app/Controller/InventoryController.php, line 20]
+2014-10-04 21:33:17 Error: [FatalErrorException] Call to undefined method Security::encrypt()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/app/Contr...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/app/Contr...', 20, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/app/Contr...', 20, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 21:34:21 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 21:34:21 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 21:45:20 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 21:45:20 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:02:58 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 22:02:58 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:03:00 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 22:03:00 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:09:43 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 22:09:43 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:13:11 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 22:13:11 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:13:12 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 22:13:12 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:19:43 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 22:19:43 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:19:49 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 22:19:49 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:20:59 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 22:20:59 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:21:27 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 22:21:27 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:24:27 Error: Fatal Error (1): Call to undefined function mcrypt_get_iv_size() in [/Demo/lib/Cake/Utility/Security.php, line 232]
+2014-10-04 22:24:27 Error: [FatalErrorException] Call to undefined function mcrypt_get_iv_size()
+Request URL: /inventory/test
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Demo/lib/Cake/...', 232, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:34:25 Error: Fatal Error (1): Call to a member function query() on a non-object in [/Demo/app/Controller/InventoryController.php, line 36]
+2014-10-04 22:34:25 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/app/Contr...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/app/Contr...', 36, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/app/Contr...', 36, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:34:43 Error: Fatal Error (1): Call to a member function query() on a non-object in [/Demo/app/Controller/InventoryController.php, line 36]
+2014-10-04 22:34:43 Error: [FatalErrorException] Call to a member function query() on a non-object
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/app/Contr...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/app/Contr...', 36, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/app/Contr...', 36, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:34:51 Error: [Exception] Assertion failed
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/app/Controller/InventoryController.php(40): expect(Array, 'channel_id')
+#1 [internal function]: InventoryController->updateAllInventories()
+#2 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#3 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#5 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-04 22:35:15 Error: [Exception] Assertion failed
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/app/Controller/InventoryController.php(40): expect(Array, 'channel_id')
+#1 [internal function]: InventoryController->updateAllInventories()
+#2 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#3 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#5 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-04 22:36:57 Error: [Exception] Assertion failed
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/app/Controller/InventoryController.php(40): expect(Array, 'channel_id')
+#1 [internal function]: InventoryController->updateAllInventories()
+#2 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#3 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#5 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-04 22:38:08 Error: [Exception] Assertion failed
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/app/Controller/InventoryController.php(40): expect(Array, 'channel_id')
+#1 [internal function]: InventoryController->updateAllInventories()
+#2 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#3 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#5 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-04 22:38:25 Error: [Exception] Assertion failed
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/app/Controller/InventoryController.php(41): expect(Array, 'channel_id')
+#1 [internal function]: InventoryController->updateAllInventories()
+#2 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#3 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#5 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-04 22:38:48 Error: [Exception] Assertion failed
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/app/Controller/InventoryController.php(45): expect(Array, 'mid')
+#1 [internal function]: InventoryController->updateAllInventories()
+#2 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#3 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#5 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-04 22:39:03 Error: [Exception] Assertion failed
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/app/Controller/InventoryController.php(46): expect(Array, 'mid')
+#1 [internal function]: InventoryController->updateAllInventories()
+#2 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#3 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#4 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#5 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-04 22:40:45 Error: Fatal Error (1): Call to a member function getAllNewOrders() on a non-object in [/Demo/app/Controller/InventoryController.php, line 48]
+2014-10-04 22:40:45 Error: [FatalErrorException] Call to a member function getAllNewOrders() on a non-object
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/app/Contr...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/app/Contr...', 48, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/app/Contr...', 48, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:41:04 Error: Fatal Error (1): Call to a member function getAllNewOrders() on a non-object in [/Demo/app/Controller/InventoryController.php, line 48]
+2014-10-04 22:41:04 Error: [FatalErrorException] Call to a member function getAllNewOrders() on a non-object
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/app/Contr...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/app/Contr...', 48, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/app/Contr...', 48, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:41:19 Error: Fatal Error (1): Class 'Component\BaseChannel' not found in [/Demo/app/Controller/Component/ShopifyChannelComponent.php, line 7]
+2014-10-04 22:41:19 Error: [FatalErrorException] Class 'Component\BaseChannel' not found
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Componen...', '/Demo/app/Contr...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Componen...', '/Demo/app/Contr...', 7, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Componen...', '/Demo/app/Contr...', 7, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:41:27 Error: Fatal Error (1): Class 'BaseChannel' not found in [/Demo/app/Controller/Component/ShopifyChannelComponent.php, line 3]
+2014-10-04 22:41:27 Error: [FatalErrorException] Class 'BaseChannel' not found
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'BaseChan...', '/Demo/app/Contr...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'BaseChan...', '/Demo/app/Contr...', 3, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'BaseChan...', '/Demo/app/Contr...', 3, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:44:31 Error: Fatal Error (1): Class 'BaseChannelComponent' not found in [/Demo/app/Controller/Component/ShopifyChannelComponent.php, line 5]
+2014-10-04 22:44:31 Error: [FatalErrorException] Class 'BaseChannelComponent' not found
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'BaseChan...', '/Demo/app/Contr...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'BaseChan...', '/Demo/app/Contr...', 5, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'BaseChan...', '/Demo/app/Contr...', 5, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:44:55 Error: Fatal Error (1): Class 'Component\Component' not found in [/Demo/app/Controller/Component/BaseChannelComponent.php, line 7]
+2014-10-04 22:44:55 Error: [FatalErrorException] Class 'Component\Component' not found
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Componen...', '/Demo/app/Contr...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Componen...', '/Demo/app/Contr...', 7, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Componen...', '/Demo/app/Contr...', 7, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:46:12 Error: Fatal Error (1): Call to a member function getAllNewOrders() on a non-object in [/Demo/app/Controller/InventoryController.php, line 48]
+2014-10-04 22:46:12 Error: [FatalErrorException] Call to a member function getAllNewOrders() on a non-object
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/app/Contr...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/app/Contr...', 48, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/app/Contr...', 48, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:47:33 Error: Fatal Error (1): Call to a member function getAllNewOrders() on a non-object in [/Demo/app/Controller/InventoryController.php, line 48]
+2014-10-04 22:47:33 Error: [FatalErrorException] Call to a member function getAllNewOrders() on a non-object
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/app/Contr...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/app/Contr...', 48, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/app/Contr...', 48, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:48:36 Error: Fatal Error (1): Call to a member function executeRequest() on a non-object in [/Demo/app/Controller/Component/ShopifyChannelComponent.php, line 32]
+2014-10-04 22:48:36 Error: [FatalErrorException] Call to a member function executeRequest() on a non-object
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/app/Contr...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/app/Contr...', 32, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/app/Contr...', 32, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 22:52:45 Error: Fatal Error (1): Call to a member function executeRequest() on a non-object in [/Demo/app/Controller/Component/ShopifyChannelComponent.php, line 34]
+2014-10-04 22:52:45 Error: [FatalErrorException] Call to a member function executeRequest() on a non-object
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/app/Contr...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/app/Contr...', 34, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/app/Contr...', 34, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 23:35:52 Error: Fatal Error (1): Call to a member function create() on a non-object in [/Demo/app/Controller/InventoryController.php, line 47]
+2014-10-04 23:35:52 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Demo/app/Contr...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Demo/app/Contr...', 47, Array)
+#2 /Demo/lib/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Demo/app/Contr...', 47, Array)
+#3 /Demo/lib/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-04 23:43:23 Error: [PDOException] SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '2008-01-10T11:00:00-05:00' for column 'occurred' at row 1
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Demo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Demo/lib/Cake/Model/Datasource/DboSource.php(1003): DboSource->execute('INSERT INTO `ca...')
+#3 /Demo/lib/Cake/Model/Model.php(1830): DboSource->create(Object(SoftInventoryEvent), Array, Array)
+#4 /Demo/app/Controller/InventoryController.php(47): Model->save(Array)
+#5 [internal function]: InventoryController->updateAllInventories()
+#6 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#9 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-04 23:43:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 'IPOD2008GREEN', 'Shopify:450789469.466157049', 1, 1)' at line 1
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Demo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Demo/lib/Cake/Model/Datasource/DboSource.php(1003): DboSource->execute('INSERT INTO `ca...')
+#3 /Demo/lib/Cake/Model/Model.php(1830): DboSource->create(Object(SoftInventoryEvent), Array, Array)
+#4 /Demo/app/Controller/InventoryController.php(47): Model->save(Array)
+#5 [internal function]: InventoryController->updateAllInventories()
+#6 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#9 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-04 23:44:11 Error: [PDOException] SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1199980800' for column 'occurred' at row 1
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Demo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Demo/lib/Cake/Model/Datasource/DboSource.php(1003): DboSource->execute('INSERT INTO `ca...')
+#3 /Demo/lib/Cake/Model/Model.php(1830): DboSource->create(Object(SoftInventoryEvent), Array, Array)
+#4 /Demo/app/Controller/InventoryController.php(47): Model->save(Array)
+#5 [internal function]: InventoryController->updateAllInventories()
+#6 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#9 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-04 23:44:48 Error: [PDOException] SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1199980800' for column 'occurred' at row 1
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Demo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Demo/lib/Cake/Model/Datasource/DboSource.php(1003): DboSource->execute('INSERT INTO `ca...')
+#3 /Demo/lib/Cake/Model/Model.php(1830): DboSource->create(Object(SoftInventoryEvent), Array, Array)
+#4 /Demo/app/Controller/InventoryController.php(47): Model->save(Array)
+#5 [internal function]: InventoryController->updateAllInventories()
+#6 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#9 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-04 23:45:11 Error: [PDOException] SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1199980800' for column 'occurred' at row 1
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Demo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Demo/lib/Cake/Model/Datasource/DboSource.php(1003): DboSource->execute('INSERT INTO `ca...')
+#3 /Demo/lib/Cake/Model/Model.php(1830): DboSource->create(Object(SoftInventoryEvent), Array, Array)
+#4 /Demo/app/Controller/InventoryController.php(47): Model->save(Array)
+#5 [internal function]: InventoryController->updateAllInventories()
+#6 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#9 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-04 23:45:29 Error: [PDOException] SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1199980800' for column 'occurred' at row 1
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Demo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Demo/lib/Cake/Model/Datasource/DboSource.php(1003): DboSource->execute('INSERT INTO `ca...')
+#3 /Demo/lib/Cake/Model/Model.php(1830): DboSource->create(Object(SoftInventoryEvent), Array, Array)
+#4 /Demo/app/Controller/InventoryController.php(47): Model->save(Array)
+#5 [internal function]: InventoryController->updateAllInventories()
+#6 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#9 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-04 23:45:35 Error: [PDOException] SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1199980800' for column 'occurred' at row 1
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Demo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Demo/lib/Cake/Model/Datasource/DboSource.php(1003): DboSource->execute('INSERT INTO `ca...')
+#3 /Demo/lib/Cake/Model/Model.php(1830): DboSource->create(Object(SoftInventoryEvent), Array, Array)
+#4 /Demo/app/Controller/InventoryController.php(47): Model->save(Array)
+#5 [internal function]: InventoryController->updateAllInventories()
+#6 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#9 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-04 23:47:37 Error: [PDOException] SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1199980800' for column 'occurred' at row 1
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Demo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Demo/lib/Cake/Model/Datasource/DboSource.php(1003): DboSource->execute('INSERT INTO `ca...')
+#3 /Demo/lib/Cake/Model/Model.php(1830): DboSource->create(Object(SoftInventoryEvent), Array, Array)
+#4 /Demo/app/Controller/InventoryController.php(47): Model->save(Array)
+#5 [internal function]: InventoryController->updateAllInventories()
+#6 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#9 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-04 23:49:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Shopify:450789469.466157049' for key 'uniqueness'
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Demo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Demo/lib/Cake/Model/Datasource/DboSource.php(1003): DboSource->execute('INSERT INTO `ca...')
+#3 /Demo/lib/Cake/Model/Model.php(1830): DboSource->create(Object(SoftInventoryEvent), Array, Array)
+#4 /Demo/app/Controller/InventoryController.php(47): Model->save(Array)
+#5 [internal function]: InventoryController->updateAllInventories()
+#6 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#9 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-04 23:50:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Shopify:450789469.466157049' for key 'uniqueness'
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Demo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 /Demo/lib/Cake/Model/Datasource/DboSource.php(1003): DboSource->execute('INSERT INTO `ca...')
+#3 /Demo/lib/Cake/Model/Model.php(1830): DboSource->create(Object(SoftInventoryEvent), Array, Array)
+#4 /Demo/app/Controller/InventoryController.php(46): Model->save(Array)
+#5 [internal function]: InventoryController->updateAllInventories()
+#6 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#8 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#9 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-04 23:50:41 Error: [Exception] Assertion failed
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/app/Controller/Component/ShopifyChannelComponent.php(19): expect(Array, 'created_at')
+#1 /Demo/app/Controller/Component/ShopifyChannelComponent.php(11): ShopifyChannelComponent->convertToStandardFormat(Array)
+#2 /Demo/app/Controller/InventoryController.php(41): ShopifyChannelComponent->getAllNewOrders(0, 'stitchdemo', '724d989f74ea002...', '94faffaca435ebc...')
+#3 [internal function]: InventoryController->updateAllInventories()
+#4 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#5 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#7 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-10-04 23:51:08 Error: [Exception] Assertion failed
+Request URL: /inventory/updateAllInventories
+Stack Trace:
+#0 /Demo/app/Controller/Component/ShopifyChannelComponent.php(20): expect(Array, 'created_at')
+#1 /Demo/app/Controller/Component/ShopifyChannelComponent.php(11): ShopifyChannelComponent->convertToStandardFormat(Array)
+#2 /Demo/app/Controller/InventoryController.php(41): ShopifyChannelComponent->getAllNewOrders(0, 'stitchdemo', '724d989f74ea002...', '94faffaca435ebc...')
+#3 [internal function]: InventoryController->updateAllInventories()
+#4 /Demo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(InventoryController), Array)
+#5 /Demo/lib/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#7 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
