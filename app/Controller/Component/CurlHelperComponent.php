@@ -34,6 +34,6 @@ class CurlHelperComponent extends Component {
         }
         curl_close($oCurl);
         return $sOutput;
-    
+
     }
 } 

@@ -46,7 +46,7 @@ class InventoryController extends AppController
                 $this->SoftInventoryEvent->save($aNewOrder);
             }
         }
-
+        echo json_encode(['success' => true]);
     }
 
 

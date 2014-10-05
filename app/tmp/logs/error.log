@@ -784,3 +784,30 @@ Stack Trace:
 #6 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
 #7 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #8 {main}
+2014-10-05 00:12:41 Error: [MissingControllerException] Controller class ApiController could not be found.
+Exception Attributes: array (
+  'class' => 'ApiController',
+  'plugin' => NULL,
+)
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-05 00:14:02 Error: [MissingControllerException] Controller class ApiController could not be found.
+Exception Attributes: array (
+  'class' => 'ApiController',
+  'plugin' => NULL,
+)
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-05 00:15:01 Error: [MissingControllerException] Controller class ApiController could not be found.
+Exception Attributes: array (
+  'class' => 'ApiController',
+  'plugin' => NULL,
+)
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

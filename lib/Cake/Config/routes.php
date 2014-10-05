@@ -69,8 +69,14 @@ foreach ($prefixes as $prefix) {
 	Router::connect("/{$prefix}/:controller", $indexParams);
 	Router::connect("/{$prefix}/:controller/:action/*", $params);
 }
+
+Router::connect(
+    '/api/sync',
+    ['controller' => 'Inventory', 'action' => 'updateAllInventories', "[method]" => "POST"]
+);
 Router::connect('/:controller', array('action' => 'index'));
 Router::connect('/:controller/:action/*');
+
 
 $namedConfig = Router::namedConfig();
 if ($namedConfig['rules'] === false) {
