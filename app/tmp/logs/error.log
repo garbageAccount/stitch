@@ -811,3 +811,160 @@ Request URL: /api/sync
 Stack Trace:
 #0 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-10-05 00:15:57 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(InventoryController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(InventoryController))
+#2 /Demo/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /Demo/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Demo/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#8 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-05 00:16:31 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(InventoryController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(InventoryController))
+#2 /Demo/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /Demo/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Demo/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#8 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-05 00:16:46 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(InventoryController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(InventoryController))
+#2 /Demo/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /Demo/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Demo/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#8 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-05 00:17:28 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(InventoryController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(InventoryController))
+#2 /Demo/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /Demo/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Demo/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#8 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-05 00:17:36 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(InventoryController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(InventoryController))
+#2 /Demo/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /Demo/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Demo/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#8 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-05 00:19:12 Error: [MissingControllerException] Controller class ApiController could not be found.
+Exception Attributes: array (
+  'class' => 'ApiController',
+  'plugin' => NULL,
+)
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-05 00:19:55 Error: [MissingControllerException] Controller class ApiController could not be found.
+Exception Attributes: array (
+  'class' => 'ApiController',
+  'plugin' => NULL,
+)
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-05 00:20:11 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(InventoryController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(InventoryController))
+#2 /Demo/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /Demo/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Demo/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#8 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-05 00:22:27 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(InventoryController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(InventoryController))
+#2 /Demo/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /Demo/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Demo/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#8 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-05 00:23:59 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(InventoryController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(InventoryController))
+#2 /Demo/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /Demo/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Demo/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#8 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-05 00:27:12 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(InventoryController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(InventoryController))
+#2 /Demo/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /Demo/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Demo/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#8 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-05 00:27:24 Error: [BadRequestException] The request has been black-holed
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/lib/Cake/Controller/Component/SecurityComponent.php(242): SecurityComponent->blackHole(Object(InventoryController), 'csrf')
+#1 [internal function]: SecurityComponent->startup(Object(InventoryController))
+#2 /Demo/lib/Cake/Utility/ObjectCollection.php(132): call_user_func_array(Array, Array)
+#3 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#4 /Demo/lib/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#5 /Demo/lib/Cake/Controller/Controller.php(675): CakeEventManager->dispatch(Object(CakeEvent))
+#6 /Demo/lib/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#7 /Demo/lib/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(InventoryController), Object(CakeRequest), Object(CakeResponse))
+#8 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2014-10-05 00:29:35 Error: [MissingControllerException] Controller class ApiController could not be found.
+Exception Attributes: array (
+  'class' => 'ApiController',
+  'plugin' => NULL,
+)
+Request URL: /api/sync
+Stack Trace:
+#0 /Demo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

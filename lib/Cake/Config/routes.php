@@ -72,7 +72,7 @@ foreach ($prefixes as $prefix) {
 
 Router::connect(
     '/api/sync',
-    ['controller' => 'Inventory', 'action' => 'updateAllInventories', "[method]" => "POST"]
+    ['controller' => 'Inventory', 'action' => 'updateAllInventories', '[method]' => 'POST']
 );
 Router::connect('/:controller', array('action' => 'index'));
 Router::connect('/:controller/:action/*');

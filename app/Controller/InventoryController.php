@@ -10,13 +10,11 @@ class InventoryController extends AppController
 {
 
     var $uses = ["SoftInventoryEvent"];
-    var $components = ["CurlHelper", "Security", 'ShopifyChannel', 'VendChannel'];
-    /**
-     * Scaffold
-     *
-     * @var mixed
-     */
-    public $scaffold;
+    var $components = ["CurlHelper", "Security", 'ShopifyChannel', 'VendChannel', 'Security'];
+
+    public function beforeFilter(){
+        $this->Components->disable('Security');
+    }
 
     function updateAllInventories()
     {
